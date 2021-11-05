@@ -15,5 +15,4 @@ public class MotionListItem : MonoBehaviour
         listItemButton.onClick.AddListener(()=> { onClick?.Invoke(); });
         motionNameLabel.text = motionName;
     }
-
 }

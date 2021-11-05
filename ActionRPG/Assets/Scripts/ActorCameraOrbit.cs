@@ -13,10 +13,10 @@ public class ActorCameraOrbit : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            transform.eulerAngles +=
+            transform.eulerAngles += 
                 new Vector3(
                     Input.GetAxis("Mouse Y") * VerticalOffset,
-                    Input.GetAxis("Mouse X") * HorizontalOffset,
+                    Input.GetAxis("Mouse X") * HorizontalOffset, 
                     0f
                 );
         }

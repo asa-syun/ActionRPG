@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class MotionEventPanel : MonoBehaviour
 {
     [SerializeField]
@@ -48,7 +47,7 @@ public class MotionEventPanel : MonoBehaviour
     {
         if (motionEventItemParent != null)
         {
-            foreach (Transform child in motionEventItemParent)
+            foreach(Transform child in motionEventItemParent)
             {
                 if (child.GetComponent<MotionEventListItem>().IsClonedObject)
                 {
@@ -58,7 +57,7 @@ public class MotionEventPanel : MonoBehaviour
         }
 
         listItemTemplate.gameObject.SetActive(true);
-        foreach (var eventData in events)
+        foreach(var eventData in events)
         {
             var newListItem = Instantiate(listItemTemplate, motionEventItemParent);
             MotionEventListItem meli = newListItem.GetComponent<MotionEventListItem>();

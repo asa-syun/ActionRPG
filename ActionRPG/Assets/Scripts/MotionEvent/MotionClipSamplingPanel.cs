@@ -6,26 +6,31 @@ using UnityEngine.UI;
 
 public class MotionClipSamplingPanel : MonoBehaviour
 {
-    [SerializeField] private Text currentClipName = null;
+    [SerializeField]
+    private Text currentClipName = null;
 
-    [SerializeField] private Text clipTotalLength = null;
+    [SerializeField]
+    private Text clipTotalLength = null;
 
-    [SerializeField] private Text curretFrame = null;
+    [SerializeField]
+    private Text currentFrame = null;
 
-    [SerializeField] private Slider samplingTimeline = null;
+    [SerializeField]
+    private Slider samplingTimeline = null;
 
     private AnimationClip currentClip = null;
 
     private Action<float> onSamplingValueChange = null;
 
-    public void SetSamplingValueChange(Action<float> callback)
+    public void SetOnSamplingValueChange(Action<float> callback)
     {
         onSamplingValueChange = callback;
 
         samplingTimeline.onValueChanged.AddListener((val) => {
 
-            curretFrame.text = samplingTimeline.value.ToString();
-            onSamplingValueChange?.Invoke(samplingTimeline.value );
+            currentFrame.text = samplingTimeline.value.ToString();
+            onSamplingValueChange?.Invoke( samplingTimeline.value );
+        
         });
     }
 
@@ -34,9 +39,11 @@ public class MotionClipSamplingPanel : MonoBehaviour
         currentClip = clip;
         currentClipName.text = clip.name;
         clipTotalLength.text = clip.length.ToString();
-        curretFrame.text = "0";
+        currentFrame.text = "0";
 
         samplingTimeline.minValue = 0f;
         samplingTimeline.maxValue = clip.length;
+        samplingTimeline.value = 0f;
     }
+
 }

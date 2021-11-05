@@ -56,12 +56,12 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\MotionEvent\MotionEventListItem.cs" />
+    <Compile Include="Assets\Scripts\MotionEvent\MotionEventPanel.cs" />
     <Compile Include="Assets\Scripts\MotionEvent\MotionEventTool.cs" />
+    <Compile Include="Assets\Scripts\ActorCameraOrbit.cs" />
     <Compile Include="Assets\Scripts\MotionEvent\MotionClipSamplingPanel.cs" />
     <Compile Include="Assets\Scripts\MotionEvent\MotionListItem.cs" />
-    <Compile Include="Assets\Scripts\ActorCameraOrbit.cs" />
-    <Compile Include="Assets\Scripts\MotionEvent\MotionEventPanel.cs" />
-    <Compile Include="Assets\Scripts\MotionEvent\MotionEventListItem.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Weapon\Swords\Shader\ToonSwords.shader" />
