@@ -62,6 +62,9 @@
     <Compile Include="Assets\Scripts\ActorCameraOrbit.cs" />
     <Compile Include="Assets\Scripts\MotionEvent\MotionEventTool.cs" />
     <Compile Include="Assets\Scripts\MotionEvent\MotionEventPanel.cs" />
+    <Compile Include="Assets\Scripts\MotionEvent\Data\MotionEventManager.cs" />
+    <Compile Include="Assets\Scripts\MotionEvent\Data\MotionEventDispatcher.cs" />
+    <Compile Include="Assets\Scripts\MotionEvent\MotionEventTest.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Ludiq\Ludiq.Core\DotNetDocumentation\System.Web.Extensions.Design.xml" />
@@ -410,11 +413,11 @@
     <Reference Include="Bolt.Flow.Runtime">
       <HintPath>Assets\Ludiq\Assemblies\Bolt.Flow.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Ludiq.Core.Runtime">
-      <HintPath>Assets\Ludiq\Assemblies\Ludiq.Core.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="MiscUtil">
       <HintPath>Assets\Ludiq\Assemblies\MiscUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="Ludiq.Core.Runtime">
+      <HintPath>Assets\Ludiq\Assemblies\Ludiq.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Bolt.State.Runtime">
       <HintPath>Assets\Ludiq\Assemblies\Bolt.State.Runtime.dll</HintPath>
