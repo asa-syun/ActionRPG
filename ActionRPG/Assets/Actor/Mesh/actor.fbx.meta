@@ -1,7 +1,7 @@
 fileFormatVersion: 2
-guid: 9989077d25715fa4bb79ac84d8763258
+guid: e43e545358a96f54488581a229d731a7
 ModelImporter:
-  serializedVersion: 20200
+  serializedVersion: 19301
   internalIDToNameTable:
   - first:
       74: -203655887218126122
@@ -10,18 +10,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: SpacePirate_diffuse
-    second: {fileID: 2800000, guid: 90fd348e055b97d4dafda18ef28b54c8, type: 3}
+      name: Kachujin_diffuse
+    second: {fileID: 2800000, guid: f63be4eb11abe4548b6c81ec738da291, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: SpacePirate_normal
-    second: {fileID: 2800000, guid: 3c29b4f36206e2343b8fad201ee4293a, type: 3}
+      name: Kachujin_normal
+    second: {fileID: 2800000, guid: 65d66a74e0564f041bc224bd2161537e, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: SpacePirate_specular
-    second: {fileID: 2800000, guid: aa17140c8bf80e749b40ffa8d4c9f8ae, type: 3}
+      name: Kachujin_specular
+    second: {fileID: 2800000, guid: 527864342791eb649bf2500a6fb0d726, type: 3}
   materials:
     materialImportMode: 0
     materialName: 0
@@ -67,7 +67,6 @@ ModelImporter:
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
-    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
@@ -77,9 +76,6 @@ ModelImporter:
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
-    secondaryUVMarginMethod: 1
-    secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
@@ -113,7 +109,6 @@ ModelImporter:
   animationType: 2
   humanoidOversampling: 1
   avatarSetup: 1
-  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
